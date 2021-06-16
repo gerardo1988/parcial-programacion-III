@@ -25,7 +25,9 @@ sequelize model:generate --name UserRol --attributes userId:integer,rolId:intege
 sequelize model:generate --name Order --attributes number:integer,date:date,total:double,userId:integer,stateId:integer,paymentId:integer
 
 sequelize model:generate --name Shipping --attributes street:string,number:integer,orderId:integer
+
 sequelize model:generate --name Product --attributes name:string,price:double,stock_min:integer,stock_max:integer,brandId:integer,categoryId:intege,sizeId:integer,genderId,integer
 
 sequelize model:generate --name OrderDetail --attributes quantity:double,subtotal:double,productId:integer
+
 sequelize model:generate --name Image --attributes name:string, productId:integer
